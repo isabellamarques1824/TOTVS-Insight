@@ -7,16 +7,18 @@ public class Relatorio {
     private int idRelatorio;
     private Usuario usuario;
     private String tipoRelatorio;
+    private String filtrosUtilizados;
     private LocalDateTime dataGeracao;
 
     // construtores
     public Relatorio() {
     }
 
-    public Relatorio(int idRelatorio, Usuario usuario, String tipoRelatorio, LocalDateTime dataGeracao) {
+    public Relatorio(int idRelatorio, Usuario usuario, String tipoRelatorio, String filtrosUtilizados,  LocalDateTime dataGeracao) {
         this.idRelatorio = idRelatorio;
         this.usuario = usuario;
         this.tipoRelatorio = tipoRelatorio;
+        this.filtrosUtilizados = filtrosUtilizados;
         this.dataGeracao = dataGeracao;
     }
 
@@ -45,6 +47,14 @@ public class Relatorio {
         this.tipoRelatorio = tipoRelatorio;
     }
 
+    public String getFiltrosUtilizados() {
+        return filtrosUtilizados;
+    }
+
+    public void setFiltrosUtilizados(String filtrosUtilizados) {
+        this.filtrosUtilizados = filtrosUtilizados;
+    }
+
     public LocalDateTime getDataGeracao() {
         return dataGeracao;
     }
@@ -61,6 +71,7 @@ public class Relatorio {
                 "\nCódigo do relatório: " + idRelatorio +
                 "\nUsuário responsável: " + usuario.getNome() +
                 "\nTipo do relatório: " + tipoRelatorio +
+                "\nFiltros utilizados: " + filtrosUtilizados +
                 "\nData de geração: " + dataGeracao;
     }
 }

@@ -8,18 +8,20 @@ public class AnaliseIA {
     private double scoreChurn;
     private double scoreOportunidade;
     private String prioridade;
+    private String resumoIA;
 
     // construtores
     public AnaliseIA() {
     }
 
-    public AnaliseIA(int idAnalise, Transcricao transcricao, String sentimentoGeral, double scoreChurn, double scoreOportunidade, String prioridade) {
+    public AnaliseIA(int idAnalise, Transcricao transcricao, String sentimentoGeral, double scoreChurn, double scoreOportunidade, String prioridade, String resumoIA) {
         this.idAnalise = idAnalise;
         this.transcricao = transcricao;
         this.sentimentoGeral = sentimentoGeral;
-        this.scoreChurn = scoreChurn;
-        this.scoreOportunidade = scoreOportunidade;
+        setScoreChurn(scoreChurn);
+        setScoreOportunidade(scoreOportunidade);
         this.prioridade = prioridade;
+        this.resumoIA = resumoIA;
     }
 
     // métodos getters/setters
@@ -75,6 +77,14 @@ public class AnaliseIA {
         this.prioridade = prioridade;
     }
 
+    public String getResumoIA() {
+        return resumoIA;
+    }
+
+    public void setResumoIA(String resumoIA) {
+        this.resumoIA = resumoIA;
+    }
+
     // métodos da classe
     public String calcularPrioridade() {
         if (scoreChurn >= 70 || scoreOportunidade >= 80) {
@@ -89,9 +99,11 @@ public class AnaliseIA {
     }
 
     public String gerarResumoAnalise() {
-        return "Sentimento geral: " + sentimentoGeral +
+        resumoIA = "Sentimento geral: " + sentimentoGeral +
                 "\nScore de churn: " + scoreChurn +
                 "\nScore de oportunidade: " + scoreOportunidade +
                 "\nPrioridade: " + prioridade;
+
+        return resumoIA;
     }
 }

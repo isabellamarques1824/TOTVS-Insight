@@ -4,6 +4,7 @@ public class Insight {
     // atributos
     private int idInsight;
     private String descricao;
+    private String evidenciadoEm;
     private String prioridade;
     private String recomendacao;
 
@@ -11,9 +12,10 @@ public class Insight {
     public Insight() {
     }
 
-    public Insight(int idInsight, String descricao, String prioridade, String recomendacao) {
+    public Insight(int idInsight, String descricao, String evidenciadoEm, String prioridade, String recomendacao) {
         this.idInsight = idInsight;
         this.descricao = descricao;
+        this.evidenciadoEm = evidenciadoEm;
         this.prioridade = prioridade;
         this.recomendacao = recomendacao;
     }
@@ -33,6 +35,14 @@ public class Insight {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public String getEvidenciadoEm() {
+        return evidenciadoEm;
+    }
+
+    public void setEvidenciadoEm(String evidenciadoEm) {
+        this.evidenciadoEm = evidenciadoEm;
     }
 
     public String getPrioridade() {
