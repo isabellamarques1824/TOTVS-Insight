@@ -8,6 +8,7 @@ public class Reuniao {
     private Cliente cliente;
     private Usuario usuarioResponsavel;
     private String titulo;
+    private String tipoReuniao;
     private LocalDateTime dataReuniao;
     private String idioma;
 
@@ -15,11 +16,12 @@ public class Reuniao {
     public Reuniao() {
     }
 
-    public Reuniao(int idReuniao, Cliente cliente, Usuario usuarioResponsavel, String titulo, LocalDateTime dataReuniao, String idioma) {
+    public Reuniao(int idReuniao, Cliente cliente, Usuario usuarioResponsavel, String titulo, String tipoReuniao, LocalDateTime dataReuniao, String idioma) {
         this.idReuniao = idReuniao;
         this.cliente = cliente;
         this.usuarioResponsavel = usuarioResponsavel;
         this.titulo = titulo;
+        this.tipoReuniao = tipoReuniao;
         this.dataReuniao = dataReuniao;
         this.idioma = idioma;
     }
@@ -55,6 +57,14 @@ public class Reuniao {
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
+    }
+
+    public String getTipoReuniao() {
+        return tipoReuniao;
+    }
+
+    public void setTipoReuniao(String tipoReuniao) {
+        this.tipoReuniao = tipoReuniao;
     }
 
     public LocalDateTime getDataReuniao() {
