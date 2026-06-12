@@ -6,6 +6,7 @@ public class Transcricao {
     private Reuniao reuniao;
     private String textoOriginal;
     private String textoFiltrado;
+    private String origem;
     private String status;
     private double qualidade;
 
@@ -13,11 +14,12 @@ public class Transcricao {
     public Transcricao() {
     }
 
-    public Transcricao(int idTranscricao, Reuniao reuniao, String textoOriginal, String textoFiltrado, String status, double qualidade) {
+    public Transcricao(int idTranscricao, Reuniao reuniao, String textoOriginal, String textoFiltrado, String origem, String status, double qualidade) {
         this.idTranscricao = idTranscricao;
         this.reuniao = reuniao;
         this.textoOriginal = textoOriginal;
         this.textoFiltrado = textoFiltrado;
+        this.origem = origem;
         this.status = status;
         this.qualidade = qualidade;
     }
@@ -53,6 +55,14 @@ public class Transcricao {
 
     public void setTextoFiltrado(String textoFiltrado) {
         this.textoFiltrado = textoFiltrado;
+    }
+
+    public String getOrigem() {
+        return origem;
+    }
+
+    public void setOrigem(String origem) {
+        this.origem = origem;
     }
 
     public String getStatus() {
@@ -91,6 +101,14 @@ public class Transcricao {
             return true;
         } else {
             return false;
+        }
+    }
+
+    public void marcarProntaParaAnalise() {
+        if (validarQualidade()) {
+            status = "PRONTA_ANALISE";
+        } else {
+            status = "QUALIDADE_BAIXA";
         }
     }
 }
