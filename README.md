@@ -105,7 +105,7 @@ A documentação completa do TOTVS Insight está organizada nos links abaixo:
 1. Clone este repositório:
 
 ```bash
-git clone 
+git clone https://github.com/isabellamarques1824/TOTVS-Insight.git
 ```
 
 2. Abra o projeto em uma IDE Java, como:
