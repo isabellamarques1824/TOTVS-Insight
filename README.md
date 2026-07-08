@@ -62,23 +62,16 @@ O TOTVS Insight foi pensado para conter funcionalidades como:
 
 Abaixo estão algumas imagens do protótipo visual planejado para o TOTVS Insight.
 
-> Substitua os caminhos abaixo pelos arquivos reais das imagens dentro do repositório.
-
-### Tela de Login
-
-
-### Dashboard Principal
-
-
-
 ### Tela de Transcrições
-
+![Transcrições](imagens/transcricoes.png)
 
 ### Fila de Processamento
 
+![fila_processamento](imagens/fila_processamento.png)
 
 ### Assistente Inteligente
 
+![Assistente](imagens/assistente.png)
 
 ---
 
@@ -89,7 +82,6 @@ Abaixo estão algumas imagens do protótipo visual planejado para o TOTVS Insigh
 * Programação Orientada a Objetos;
 * UML;
 * Oracle Database;
-* SQL;
 * Modelagem relacional;
 * Inteligência Artificial;
 * Git e GitHub.
