@@ -94,9 +94,9 @@ A documentação completa do TOTVS Insight está organizada nos links abaixo:
 
 | Documento                                                           | Descrição                                                                                                                      |
 | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| [Documentação de requisitos e planejamento](COLE_AQUI_O_LINK_AGILE) | Organização do projeto, definição da solução, backlog, personas, histórias de usuário e planejamento geral.                    |
-| [Documentação do banco de dados](COLE_AQUI_O_LINK_DATABASE)         | Modelagem dos dados, estrutura das tabelas, entidades, relacionamentos e organização das informações armazenadas pelo sistema. |
-| [Documentação da implementação Java](COLE_AQUI_O_LINK_JAVA)         | Estrutura da implementação inicial em Java, classes, regras aplicadas e organização da solução desenvolvida.                   |
+| [Documentação de requisitos e planejamento](https://docs.google.com/document/d/144BY7u14C1Zb7tWMTxZE7TA0QUVt07GHoxCbpUyQuKg/edit?usp=sharing) | Organização do projeto, definição da solução, backlog, personas, histórias de usuário e planejamento geral.                    |
+| [Documentação do banco de dados](https://docs.google.com/document/d/1e77jzb07UZJCajqBI1MwcBhDcko3agdCdnj57kIl-wI/edit?usp=sharing)         | Modelagem dos dados, estrutura das tabelas, entidades, relacionamentos e organização das informações armazenadas pelo sistema. |
+| [Documentação da implementação Java](https://docs.google.com/document/d/19sbOkEEtzQqh04Kx3j5nR6IBs4N4HrPrnTEvVEY9uK8/edit?usp=sharing)         | Estrutura da implementação inicial em Java, classes, regras aplicadas e organização da solução desenvolvida.                   |
 
 ---
 
@@ -144,10 +144,10 @@ As próximas evoluções do projeto incluem:
 
 Projeto desenvolvido por:
 
-* Arthur Canaverde da Cruz — RM 563029;
-* Isabella Jardim Marques — RM 566470;
-* Mayene Moura da Silva — RM 564624;
-* Murilo Canéstri dos Reis — RM 564053.
+* Arthur Canaverde da Cruz
+* Isabella Jardim Marques
+* Mayene Moura da Silva
+* Murilo Canéstri dos Reis
 
 ---
 
